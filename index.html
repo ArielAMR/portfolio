@@ -8,44 +8,92 @@
     <meta name="author" content="Ariel Amriou">
 
     <script src="https://kit.fontawesome.com/b6dbda9938.js" crossorigin="anonymous"></script>
-
-    <title>Ariel Amriou's website</title>
+    
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logoA.png" />
+    
+    <title>Ariel Amriou's portfolio</title>
+    
 </head>
 <body>
 
 
     <header>
         <div id="headerL">
-        <a href="index.html"><img src="/images/logoA.png" width="30px" title="Home page" id="headerareaL"></a>
+            <a href="index.html"><img src="/images/logoA.png" width="30px" title="Home page" id="headerareaL"></a>
         </div>
 
         <div id="headerMid">
-            <h1 >Ariel Amriou's portfolio</h1>
+            <h1 >My portfolio</h1>
+            <h5>By Ariel Amriou</h5>
         </div>
 
         <div id="headerR">
-            <a href="#contactMe" class="meContacter" title="Contact Me"><i class="fa-regular fa-envelope"></i></a>
-            <button name="language"  title="select a language" class="languageSelecter" >
+            <a href="#contact" class="meContacter" title="Contact Me"><i class="fa-regular fa-envelope"></i></a>
+            <select name="language"  title="select a language" class="languageSelecter" >
                 <option value="FR">FR</option>
                 <option value="US">US</option>
-            </button>
+            </select>
         </div>
     </header>
 
     <main>
         <nav>
-            <a href="underpages/projects.html">My projects</a>
+            <a href="#projects">My projects</a>
             <br>
-            <a href="underpages/certifications.html">My certifications</a>
-            <a href="underpages/abouteMe.html">About Me</a>
+            <a href="#certifications">My certifications</a>
+            <a href="#about-me">About Me</a>
             <br>
-            <a href="underpages/ressources.html">devLog et ressources</a>
+            <a href="#question-and-ressources">Questions et ressources</a>
         </nav>
 
-        <br>
+        <hr>
 
-        <section></section>
+        <section id="projects">
+            <div id="project1">
+                <a href="projects/project1.html" target="_blank">
+                    <h2>project1</h2>
+                </a>
+            </div>
+            <div id="project2">
+                <a href="projects/project2.html" target="_blank">
+                    <h2>project2</h2>
+                </a>
+            </div>
+            <div id="project3">
+                <a href="projects/project3.html" target="_blank">
+                    <h2>project3</h2>
+                </a>
+            </div>
+            <a href="underpages/projects.html" target="_blank">> see more</a>
+        </section>
+
+        <hr>
+
+        <section id="certifications">
+            <div id="certification1">
+                <h2 class="certifications">Learn JavaScript</h2>
+                <p class="certifications">By codecademy</p>
+            </div>
+            <div id="certification1">
+                <h2 class="certifications">Learn HTML</h2>
+                <p class="certifications">By codecademy</p>
+            </div>
+            <a href="underpages/certifications.html" target="_blank">> see more</a>
+        </section>
+
+        <hr>
+
+        <section id="about-me">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit amet maiores beatae soluta eius deserunt molestias quaerat asperiores enim, sint expedita laboriosam ipsum! Quos recusandae impedit, veniam tempore sunt quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quia laborum incidunt nesciunt possimus, laboriosam, totam, repellendus sed sint soluta reiciendis earum consequuntur dolore harum distinctio fuga? Quidem, vel pariatur? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit error vel sequi quidem, aperiam ipsam, amet maxime in, quos suscipit sint nulla accusantium ipsa illo commodi autem repudiandae alias quis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore necessitatibus odio officiis quae. Velit error quaerat blanditiis voluptate eius expedita ipsam cupiditate quam? Voluptatum, et animi distinctio autem suscipit enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem rerum minima magni excepturi sit? Dolor in voluptates omnis cupiditate deserunt ut, quisquam aperiam! A placeat praesentium dolor provident quo ullam?</p>
+        </section>
+
+        <hr>
+
+        <section id="questions">
+            <button id="question1">Question1</button>
+            <button id="question2">Question2</button>
+        </section>
     </main>
 
     <footer>
@@ -55,12 +103,11 @@
             <a href="https://www.codecademy.com/profiles/Ariel..A" title="My codecademy" target="_blank"><i class="fa-sharp fa-solid fa-code"></i></a>
             <a href="https://www.instagram.com/ariel.amr26/?hl=fr" target="_blank"><i class="fa-brands fa-instagram" ></i></a>
         </nav>
-        <div class="contact">
+        <section id="contact">
             <p>Contact me :</p>
             <p>arielamriou@gmail.com</p>
             <p>06 78 30 41 21</p>
-        </div>
+        </section>
     </footer>
-    <script src="main.js"></script>
 </body>
 </html>

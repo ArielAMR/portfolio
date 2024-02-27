@@ -1,0 +1,72 @@
+body{
+    background-color: #240046;
+
+    font: 100;
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+/*
+padding
+margin
+*/
+
+/*Header*/
+.headerarea{
+    background-color: #E0AAFF;
+    height: 53px;
+
+    position: relative;
+
+
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: 5px;
+}
+#headerareaL{
+    padding: 10px;
+
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+
+    position: absolute;
+}
+#headerareaMid{
+    padding: 10px;
+
+    color: #2f0557;
+    position: absolute;
+
+    text-transform: uppercase;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -89%);
+}
+#headerareaR{
+    padding: 10px;
+
+    color: #2f0557;
+    position: absolute;
+
+    top: 50%;
+    left: 92%;/*change ca pour decaler enveloppe et language*/
+    transform: translateY(-50%);
+
+}
+.languageSelecter{
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 0px;
+}
+.fa-envelope{
+    font-size: x-large;
+}
+
+
+/*buttons*/

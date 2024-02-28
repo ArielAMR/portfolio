@@ -1,34 +1,50 @@
-*{
+body{
+    background-color: #859393;
     font-family: Oswald;
-    color: antiquewhite;
-
+    color: #CED0C3;
 }
 
-body{
-    background-color: black;
+*{
+    border: 1px red solid;
 }
 
 header{
-    background-color: grey;
+    background-color: #5D726F;
+    margin-top: 0px;
 }
 
 h1{
     font-family: Anta;
-    color: black;
-    text-align: center;
+    margin: 0px 0px 0px 0px;
 }
 
 h5{
-    color: black;
-    text-align: center;
+    margin: 0px 0px 0px 0px;
+}
+
+#title{
+    display: grid;
+    place-items: center;
+
 }
 
 header i,
 header select{
-    color: black;
+    color: #CED0C3;
 }
 
 header select{
-    background-color: darkgray;
+    background-color: #516461;
     border-radius: 5px;
+}
+
+section#certifications{
+
+}
+
+a{
+    color: #CED0C3;
+}
+a:hover{
+    color: #5D726F;
 }

@@ -1,0 +1,34 @@
+*{
+    font-family: Oswald;
+    color: antiquewhite;
+
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    background-color: grey;
+}
+
+h1{
+    font-family: Anta;
+    color: black;
+    text-align: center;
+}
+
+h5{
+    color: black;
+    text-align: center;
+}
+
+header i,
+header select{
+    color: black;
+}
+
+header select{
+    background-color: darkgray;
+    border-radius: 5px;
+}

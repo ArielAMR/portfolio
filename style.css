@@ -5,27 +5,22 @@ body{
 }
 
 *{
-    border: 1px red solid;
+    /* border: 1px red solid; */
+    margin: 0;
+    padding: 0;
 }
 
 header{
     background-color: #5D726F;
-    margin-top: 0px;
 }
 
 h1{
     font-family: Anta;
-    margin: 0px 0px 0px 0px;
 }
 
-h5{
-    margin: 0px 0px 0px 0px;
-}
-
-#title{
+.title{
     display: grid;
     place-items: center;
-
 }
 
 header i,
@@ -38,13 +33,23 @@ header select{
     border-radius: 5px;
 }
 
-section#certifications{
-
-}
-
 a{
     color: #CED0C3;
 }
 a:hover{
     color: #5D726F;
+}
+
+.nav{
+    border: 2px solid #5D726F;
+    border-radius: 7px;
+    padding: 7px;
+}
+
+.nav:hover{
+    background-color: #516461;
+    color: #CED0C3;
+}
+nav{
+    padding: 50px;
 }

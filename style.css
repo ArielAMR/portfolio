@@ -21,9 +21,9 @@ a:visited{
     margin: 7px;
 }
 
-/*Main*/
+/*nav*/
 
-.main .nav{
+.nav{
     display: flex;
     align-items: center;
     justify-content: center;

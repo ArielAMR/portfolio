@@ -4,24 +4,74 @@
     font-family: kufam, Helvetica, sans-serif;
 }
 
-/*icon dark/light mode*/
+:root{
+    --main-color-1: #FFFFFF;
+    --secondary-color-1: #FAF7FF;
+    --third-color-1: #8685EF;
+    --font-color-1: #000000;
+    --opacity-1: 0;
 
-.darkmode-icon{
+    --main-color-2: #000000;
+    --secondary-color-2: #161616;
+    --third-color-2: #7E3B9C;
+    --font-color-2: #FAF7FF;
+    --opacity-2: 1;
+
+}
+
+@media (prefers-color-scheme: light){
+    .text{
+        color: var(--font-color-1);
+    }
+
+    body{
+        background-color: var(--main-color-1);
+    }
+
+    .lightmode-icon{
+        opacity: 0;
+    }
+
+}
+
+@media (prefers-color-scheme: dark){
+    .text{
+        color: var(--font-color-2);
+    }
+    body{
+        background-color: var(--main-color-2);
+    }
+    .darkmode-icon{
+        opacity: 0;
+    }
+}
+
+
+/*icons*/
+
+.modes{
+    position: relative;
     margin: 15px;
-    font-size: 30px;
+    width: fit-content;
+    z-index: 2;
 }
 
 .lightmode-icon{
-    margin: 15px;
     font-size: 30px;
-    /*color: white;*/
 }
+
+.darkmode-icon{
+    position: absolute;
+    font-size: 30px;
+}
+
+
 
 /*header*/
 
 .title, .subtitle{
     font-family: "Krona One", arial, sans-serif;
-    letter-spacing: 15px;
+    letter-spacing: 20px;
 
     text-align: center;
 }
@@ -32,7 +82,6 @@
 }
 
 .headerContent{
-    background-color: red;
     margin-top: 177px;
     margin-bottom: 200px;
 }
@@ -43,3 +92,5 @@
 .nav{
     background-color: black;
 }
+
+

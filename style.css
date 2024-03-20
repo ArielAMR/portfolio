@@ -57,12 +57,12 @@
 }
 
 .lightmode-icon{
-    font-size: 30px;
+    font-size: 5dvh;
 }
 
 .darkmode-icon{
     position: absolute;
-    font-size: 30px;
+    font-size: 5dvh;
 }
 
 
@@ -71,26 +71,57 @@
 
 .title, .subtitle{
     font-family: "Krona One", arial, sans-serif;
-    letter-spacing: 20px;
-
+    letter-spacing: 3dvh;
+    margin-left: 3dvh;
     text-align: center;
 }
 
 .subtitle{
-    letter-spacing: 10px;
-    padding-top: 20px;
+    letter-spacing: 2dvh;
+    margin-left: 2dvh;
+    padding-top: 5dvh;
 }
 
 .headerContent{
-    margin-top: 177px;
-    margin-bottom: 200px;
+    margin-top: 29dvh;
+    margin-bottom: 40dvh;
 }
 
 
 /*nav*/
 
-.nav{
-    background-color: black;
+.navblock{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.midlesections{
+    display: flex;
+}
+
+.l1, .l2, .l3, .l4{
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: #7E3B9C;
+    border-radius: 1dvh;
+
+    width: 25dvh;
+    height: fit-content;
+
+    text-align: center;
+}
+
+.navblock {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 2dvh;
+    grid-row-gap: 2dvh;
+}
+.l1 { grid-area: 1 / 2 / 2 / 4;}
+.l2 { grid-area: 2 / 1 / 3 / 3;}
+.l3 { grid-area: 2 / 3 / 3 / 5;}
+.l4 { grid-area: 3 / 2 / 4 / 4;}
 

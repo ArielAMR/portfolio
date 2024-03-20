@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr-FR">
+<html lang="en-EN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -159,6 +159,22 @@
         </section>
     </footer>
     -->
+    <script>
+
+        const switchThemeBtn = document.querySelector('.darkmode-icon')
+        let toggleTheme = 0;
+
+        switchThemeBtn.addEventListener('click', () => {
+
+            if(toggleTheme === 0){
+                document.documentElement.style.setProperty('--main-color-1', 'black')
+            }else{
+
+            }
+
+        })
+
+    </script>
     <script src="main.js"></script>
 </body>
 </html>

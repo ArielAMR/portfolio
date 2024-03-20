@@ -1,0 +1,14 @@
+:root{
+    --backgroundcolor1: black;
+}
+
+body{
+    background-color: var(--backgroundcolor1);
+    color: aliceblue;
+}
+
+.btn{
+    background-color: blueviolet;
+    width: fit-content;
+    padding: 2dvh;
+}

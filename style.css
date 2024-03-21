@@ -9,7 +9,8 @@
     --secondary-color-1: #FAF7FF;
     --third-color-1: #8685EF;
     --font-color-1: #000000;
-    --opacity-1: 0;
+    --opacity-1: 1;
+    --opacity-2: 0;
 
     /*--main-color-1: #000000;
     --secondary-color-1: #161616;
@@ -19,6 +20,20 @@
 
 }
 
+body{
+    background-color: var(--main-color-1);
+    color: var(--font-color-1);
+}
+
+.text{
+    color: var(--font-color-1);
+    letter-spacing: 1dvh;
+}
+
+a{
+    color: var(--font-color-1);
+    text-decoration:none;
+}
 /*icons*/
 
 .modes{
@@ -30,13 +45,22 @@
 
 .lightmode-icon{
     font-size: 5dvh;
+    opacity: var(--opacity-2);
 }
 
 .darkmode-icon{
     position: absolute;
     font-size: 5dvh;
+    opacity: var(--opacity-1);
 }
 
+.btn-toggle{
+    position: absolute;
+    z-index: 1;
+    height: 5dvh;
+    width: 5dvh;
+    border-radius: 10dvh;
+}
 
 
 /*header*/
@@ -55,10 +79,9 @@
 }
 
 .headerContent{
-    margin-top: 29dvh;
-    margin-bottom: 40dvh;
+    margin-top: 33dvh;
+    margin-bottom: 46dvh;
 }
-
 
 /*nav*/
 
@@ -74,6 +97,8 @@
 
 .l1, .l2, .l3, .l4{
     margin: auto auto;
+    padding: 1dvh;
+    padding-top: 5%;
 
 
     background-color: var(--third-color-1);
@@ -98,3 +123,50 @@
 .l3 { grid-area: 2 / 3 / 3 / 5;}
 .l4 { grid-area: 3 / 2 / 4 / 4;}
 
+
+
+/*Certifications*/
+
+.certifications{
+    margin-top: 50dvh;
+    padding: 5dvh;
+    height: fit-content;
+
+    background-color: var(--secondary-color-1);
+}
+
+
+
+.certifications .titles{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 1dvh;
+    margin-bottom: 10dvh;
+}
+
+section.titles .blank{
+    opacity: 0;
+}
+
+.section-title{
+    font-weight: 600;
+}
+
+.see-more-projects{
+    font-weight: 600;
+}
+
+.img-group{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img{
+    height: 50dvh;
+    width: 50dvh;
+
+    background-color: darkgray;
+
+    border-radius: 1dvh;
+}

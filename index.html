@@ -22,7 +22,8 @@
 
 <body class="lightMode">
 
-    <div class="modes btn-toggle">
+    <div class="modes">
+        <div class="btn-toggle"></div>
         <i class="fa-solid fa-moon darkmode-icon text"></i>
         <i class="fa-solid fa-sun lightmode-icon text"></i>
     </div>
@@ -32,7 +33,7 @@
         <div class="headerContent">
 
             <h1 class="title text">MY PORTFOLIO</h1>
-            <h5 class="subtitle text">ariel amriou</h5>
+            <h4 class="subtitle text">ariel amriou</h4>
 
         </div>
         
@@ -42,7 +43,7 @@
     <nav class="nav">
         <div class="navblock">
             <section class="l1">
-                <a href="#" class="navbtn">My certifications</a>
+                <a href="#certifications" class="navbtn">My certifications</a>
             </section>
             <section class="l2">
                 <a href="#" class="navbtn">About Me</a>
@@ -55,28 +56,26 @@
             </section>
         </div>
     </nav>
-<!--
+
     <main class="main">
         
-        <section id="certifications">
+        <section class="certifications" id="certifications">
 
-            <div class="title-certifications">
-                <h3 class="title-certification">Certifications</h3>
-                <h6 class="see-more-certifications">>see more</h6>
-            </div>
+            <section class="titles">
+                <h6 class="blank">see more</h6>
+                <h5 class="section-title text">My certifications</h5>
+                <h6 class="see-more-projects"><a href="https://www.codecademy.com/profiles/Ariel..A" target="_blank">see more</a></h6>
+            </section>
 
-            <div id="certification1">
-                <h2 class="certifications">Learn JavaScript</h2>
-                <p class="certifications">By codecademy</p>
-            </div>
-            <div id="certification1">
-                <h2 class="certifications">Learn HTML</h2>
-                <p class="certifications">By codecademy</p>
-            </div>
-            <a href="underpages/certifications.html" target="_blank" class="seemore certifications">> see more</a>
+            <section class="img-group">
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+            </section>
+
         </section>
 
-
+<!--
         <section id="about-me">
             
             <h3 class="about-me">About me</h3>
@@ -159,22 +158,6 @@
         </section>
     </footer>
     -->
-    <script>
-
-        const switchThemeBtn = document.querySelector('.darkmode-icon')
-        let toggleTheme = 0;
-
-        switchThemeBtn.addEventListener('click', () => {
-
-            if(toggleTheme === 0){
-                document.documentElement.style.setProperty('--main-color-1', 'black')
-            }else{
-
-            }
-
-        })
-
-    </script>
     <script src="main.js"></script>
 </body>
 </html>

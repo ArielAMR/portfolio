@@ -98,7 +98,7 @@ a{
 .l1, .l2, .l3, .l4{
     margin: auto auto;
     padding: 1dvh;
-    padding-top: 5%;
+    padding-top: 5% ;
 
 
     background-color: var(--third-color-1);

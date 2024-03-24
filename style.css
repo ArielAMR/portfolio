@@ -34,6 +34,14 @@ a{
     color: var(--font-color-1);
     text-decoration:none;
 }
+
+.section-title{
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1dvh;
+}
+
+
 /*icons*/
 
 .modes{
@@ -149,10 +157,6 @@ section.titles .blank{
     opacity: 0;
 }
 
-.section-title{
-    font-weight: 600;
-}
-
 .see-more-projects{
     font-weight: 600;
 }
@@ -169,4 +173,81 @@ section.titles .blank{
     background-color: darkgray;
 
     border-radius: 1dvh;
+}
+
+/*About me*/
+
+.about-me{
+    margin: 10dvh;
+}
+
+
+.presentation-skills-graph{
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.about-me .section-title{
+    font-weight: 400;
+    letter-spacing: 0.5dvh;
+    margin-bottom: 7dvh;
+    text-align: center;
+}
+
+.about-me-presentation{
+    max-width: 90dvh;
+    min-width: 10dvh;
+}
+
+.skills-graph{
+    width: 90dvh;
+}
+
+.skill{
+    display: flex;
+    align-items: center;
+
+}
+
+.HTML5{
+    margin-right: 3.5dvh;
+}
+.CSS3{
+    margin-right: 5.5dvh;
+}
+.JS{
+    margin-right: 0dvh;
+}
+.none{
+    width: 10dvh;
+}
+
+.uncomleted{
+    height: 2dvh;
+    width: 50dvh;
+    background-color: var(--secondary-color-1);
+    border-radius: 1dvh;
+
+    transform: translateY(-1px);
+    position: absolute;
+}
+.comleted{
+    height: 2dvh;
+    background-color: var(--third-color-1);
+    border-radius: 1dvh;
+
+    transform: translateY(-1px);
+}
+
+.HTML5-progress-bar .comleted{
+    width: 40dvh;
+}
+
+.CSS3-progress-bar .comleted{
+    width: 20dvh;
+}
+
+.JS-progress-bar .comleted{
+    width: 30dvh;
 }

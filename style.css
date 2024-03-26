@@ -101,18 +101,15 @@ a{
 }
 
 .l1, .l2, .l3, .l4{
-    margin: auto auto;
     padding: 1dvh;
-    padding-top: 5% ;
-
+    padding-top: 3%;
 
     background-color: var(--third-color-1);
 
     border-radius: 1dvh;
 
-    width: 25dvh;
+    width: 40dvh;
     height: fit-content;
-
     text-align: center;
 }
 
@@ -120,15 +117,19 @@ a{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 2dvh;
-    grid-row-gap: 2dvh;
+    grid-column-gap: 3dvh;
+    grid-row-gap: 3dvh;
 }
 .l1 { grid-area: 1 / 2 / 2 / 4;}
 .l2 { grid-area: 2 / 1 / 3 / 3;}
 .l3 { grid-area: 2 / 3 / 3 / 5;}
 .l4 { grid-area: 3 / 2 / 4 / 4;}
 
-
+.text-nav{
+    font-size: 2.5dvh;
+    letter-spacing: 0.7dvh;
+    font-weight: 500;
+}
 
 /*Certifications*/
 
@@ -147,7 +148,7 @@ a{
     justify-content: space-between;
 
     margin-top: 1dvh;
-    margin-bottom: 10dvh;
+    margin-bottom: 5dvh;
 }
 
 section.titles .blank{
@@ -156,20 +157,18 @@ section.titles .blank{
 
 .see-more-projects{
     font-weight: 600;
+    letter-spacing: 0.5dvh;
 }
 
-.img-group{
+.img-group1{
     display: flex;
     justify-content: space-evenly;
 }
 
-.img{
-    height: 50dvh;
-    width: 50dvh;
-
-    background-color: darkgray;
-
+.img-group1 .img{
+    height: 40dvh;
     border-radius: 1dvh;
+    border: solid;
 }
 
 /*About me*/
@@ -185,11 +184,11 @@ section.titles .blank{
     text-align: justify;
 }
 
-.about-me .section-title{
-    font-weight: 400;
-    letter-spacing: 0.5dvh;
+.about-me .subsection-title{
+    font-size: 14px;
     margin-bottom: 7dvh;
-    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.7dvh;
 }
 
 .about-me-presentation{
@@ -204,7 +203,7 @@ section.titles .blank{
 .skill{
     display: flex;
     align-items: center;
-
+    margin-bottom: 2dvb;
 }
 
 .HTML5{
@@ -247,4 +246,33 @@ section.titles .blank{
 
 .JS-progress-bar .comleted{
     width: 30dvh;
+}
+
+/*My projects*/
+
+.projects{
+    margin-top: 30dvh;
+    padding: 5dvh;
+    height: fit-content;
+
+    background-color: var(--secondary-color-1);
+}
+
+
+
+.projects .titles{
+    margin-top: 1dvh;
+    margin-bottom: 7dvh;
+}
+
+.img-group2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img-group2 .img{
+    height: 30dvh;
+    width: 30dvh;
+    background-color: darkgray;
+    border-radius: 1dvh;
 }

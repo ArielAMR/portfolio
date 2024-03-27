@@ -11,6 +11,7 @@
     --font-color-1: #000000;
     --opacity-1: 1;
     --opacity-2: 0;
+    --background: ;
 
     /*--main-color-1: #000000;
     --secondary-color-1: #161616;
@@ -26,12 +27,10 @@ body{
 }
 
 .text{
-    color: var(--font-color-1);
     letter-spacing: 1dvh;
 }
 
 a{
-    color: var(--font-color-1);
     text-decoration:none;
 }
 
@@ -291,8 +290,60 @@ section.titles .blank{
     justify-content: space-around;
 }
 
+.questions-list .section-title{
+    cursor: pointer;
+}
+
 .awnser{
     text-align: justify;
     margin-left: 10dvh;
     margin-right: 10dvh;
+}
+
+/*footer*/
+
+.contact{
+    background-color: var(--secondary-color-1);
+    height: fit-content;
+}
+
+.contacts-info{
+    margin-bottom: 5dvh;
+}
+
+.mini-section-title{
+    text-align: center;
+    padding-top: 5dvh;
+    padding-bottom: 3dvh;
+}
+
+.contacts{
+    margin: 30dvh;
+    margin-top: 0dvh;
+    margin-bottom: 0dvh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info{
+    text-align: end;
+}
+
+.socials-icons{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 3dvh;
+}
+
+.socials-icons i{
+    color: var(--font-color-1);
+}
+
+.copyright{
+    background-color: var(--third-color-1);
+    padding: 2dvh;
+}
+
+.copyright-text{
+    text-align: center;
 }

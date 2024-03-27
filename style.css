@@ -41,7 +41,18 @@ a{
     letter-spacing: 1dvh;
 }
 
+.text-nav{
+    font-size: 2.5dvh;
+    letter-spacing: 0.7dvh;
+    font-weight: 500;
+}
 
+.subsection-title{
+    font-size: 14px;
+    margin-bottom: 7dvh;
+    font-weight: 500;
+    letter-spacing: 0.7dvh;
+}
 /*icons*/
 
 .modes{
@@ -125,12 +136,6 @@ a{
 .l3 { grid-area: 2 / 3 / 3 / 5;}
 .l4 { grid-area: 3 / 2 / 4 / 4;}
 
-.text-nav{
-    font-size: 2.5dvh;
-    letter-spacing: 0.7dvh;
-    font-weight: 500;
-}
-
 /*Certifications*/
 
 .certifications{
@@ -140,8 +145,6 @@ a{
 
     background-color: var(--secondary-color-1);
 }
-
-
 
 .certifications .titles{
     display: flex;
@@ -167,7 +170,9 @@ section.titles .blank{
 
 .img-group1 .img{
     height: 40dvh;
+
     border-radius: 1dvh;
+    border-color: var(--font-color-1);
     border: solid;
 }
 
@@ -184,12 +189,7 @@ section.titles .blank{
     text-align: justify;
 }
 
-.about-me .subsection-title{
-    font-size: 14px;
-    margin-bottom: 7dvh;
-    font-weight: 500;
-    letter-spacing: 0.7dvh;
-}
+
 
 .about-me-presentation{
     max-width: 90dvh;
@@ -258,8 +258,6 @@ section.titles .blank{
     background-color: var(--secondary-color-1);
 }
 
-
-
 .projects .titles{
     margin-top: 1dvh;
     margin-bottom: 7dvh;
@@ -275,4 +273,26 @@ section.titles .blank{
     width: 30dvh;
     background-color: darkgray;
     border-radius: 1dvh;
+}
+
+
+/*Q&A*/
+
+.questions{
+    margin: 10dvh;
+}
+
+.questions .section-title{
+    margin-bottom: 5dvh;
+}
+
+.questions-list{
+    display: flex;
+    justify-content: space-around;
+}
+
+.awnser{
+    text-align: justify;
+    margin-left: 10dvh;
+    margin-right: 10dvh;
 }

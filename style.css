@@ -5,25 +5,31 @@
 }
 
 :root{
-    --main-color-1: #FFFFFF;
-    --secondary-color-1: #FAF7FF;
-    --third-color-1: #8685EF;
-    --font-color-1: #000000;
-    --opacity-1: 1;
-    --opacity-2: 0;
-    --background: ;
-
-    /*--main-color-1: #000000;
+    --main-color-1: #131313;
     --secondary-color-1: #161616;
     --third-color-1: #7E3B9C;
     --font-color-1: #FAF7FF;
-    --opacity-: 1;*/
+    --opacity-1: 1;
+    --opacity-2: 0;
+
+    /*  dark mode
+    --main-color-1: #131313;
+    --secondary-color-1: #161616;
+    --third-color-1: #7E3B9C;
+    --font-color-1: #FAF7FF;*/
+
+    /*  light mode
+    --main-color-1: #FFFFFF;
+    --secondary-color-1: #FAF7FF;
+    --third-color-1: #8685EF;
+    --font-color-1: #131313;*/
 
 }
 
 body{
     background-color: var(--main-color-1);
     color: var(--font-color-1);
+    overflow-x: hidden;
 }
 
 .text{
@@ -46,37 +52,42 @@ a{
     font-weight: 500;
 }
 
+.link{
+    color: var(--font-color-1);
+}
+
 .subsection-title{
     font-size: 14px;
     margin-bottom: 7dvh;
     font-weight: 500;
     letter-spacing: 0.7dvh;
 }
+
 /*icons*/
 
 .modes{
     position: relative;
-    margin: 15px;
+    margin: 20px;
     width: fit-content;
     z-index: 2;
 }
 
 .lightmode-icon{
-    font-size: 5dvh;
-    opacity: var(--opacity-2);
+    font-size: 4.5dvh;
+    opacity: var(--opacity-1);
 }
 
 .darkmode-icon{
     position: absolute;
-    font-size: 5dvh;
-    opacity: var(--opacity-1);
+    font-size: 4.5dvh;
+    opacity: var(--opacity-2);
 }
 
 .btn-toggle{
     position: absolute;
     z-index: 1;
-    height: 5dvh;
-    width: 5dvh;
+    height: 4.5dvh;
+    width: 4.5dvh;
     border-radius: 10dvh;
     cursor: pointer;
 }
@@ -116,7 +127,7 @@ a{
 
     background-color: var(--third-color-1);
 
-    border-radius: 1dvh;
+    border-radius: 2.3dvh;
 
     width: 40dvh;
     height: fit-content;
@@ -135,12 +146,14 @@ a{
 .l3 { grid-area: 2 / 3 / 3 / 5;}
 .l4 { grid-area: 3 / 2 / 4 / 4;}
 
+
 /*Certifications*/
 
 .certifications{
     margin-top: 50dvh;
     padding: 5dvh;
     height: fit-content;
+
 
     background-color: var(--secondary-color-1);
 }
@@ -158,8 +171,10 @@ section.titles .blank{
 }
 
 .see-more-projects{
-    font-weight: 600;
-    letter-spacing: 0.5dvh;
+    font-weight: 550;
+    letter-spacing: 0.3dvh;
+    font-size: 1.5dvh;
+    text-decoration-line: underline;
 }
 
 .img-group1{
@@ -170,9 +185,9 @@ section.titles .blank{
 .img-group1 .img{
     height: 40dvh;
 
-    border-radius: 1dvh;
+    border-radius: 2.3dvh;
     border-color: var(--font-color-1);
-    border: solid;
+    border: solid 1px;
 }
 
 /*About me*/
@@ -250,7 +265,7 @@ section.titles .blank{
 /*My projects*/
 
 .projects{
-    margin-top: 30dvh;
+    margin-top: 15dvh;
     padding: 5dvh;
     height: fit-content;
 
@@ -346,4 +361,62 @@ section.titles .blank{
 
 .copyright-text{
     text-align: center;
+}
+
+/*background*/
+
+.backgound-circles div{
+    background-color: var(--third-color-1);
+    height: 10dvh;
+    width: 10dvh;
+    border-radius: 10dvh;
+    position: absolute;
+    z-index: -1;
+    filter: blur(10px);
+}
+
+.cirle1{
+    top: -5dvh;
+    right: 30dvh;
+    scale: 4;
+}
+.cirle2{
+    top: 80dvh;
+    left: -5dvh;
+    scale: 6;
+}
+.cirle3{
+    top: 160dvh;
+    right: -5dvh;
+    scale: 5.5;
+}
+.cirle4{
+    top: 210dvh;
+    left: 40dvh;
+    scale: 6;
+}
+.cirle5{
+    top: 270dvh;
+    right: -5dvh;
+    scale: 3.5;
+}
+.cirle6{
+    top: 295dvh;
+    left: -5dvh;
+    scale: 2;
+}
+.cirle7{
+    top: 343dvh;
+    right: 30dvh;
+    scale: 3;
+}
+.cirle8{
+    top: 370dvh;
+    left: -10dvh;
+    scale: 3.5;
+}
+.cirle9{
+    top: 395dvh;
+    right: -5dvh;
+    scale: 2;
 }

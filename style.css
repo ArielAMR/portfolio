@@ -161,6 +161,7 @@ a{
 .certifications .titles{
     display: flex;
     justify-content: space-between;
+    align-items: end;
 
     margin-top: 1dvh;
     margin-bottom: 5dvh;
@@ -193,7 +194,7 @@ section.titles .blank{
 /*About me*/
 
 .about-me{
-    margin: 10dvh;
+    margin-top: 10dvh;
 }
 
 
@@ -201,53 +202,43 @@ section.titles .blank{
     display: flex;
     justify-content: space-between;
     text-align: justify;
+    margin: 10dvh;
 }
 
 
 
 .about-me-presentation{
     max-width: 90dvh;
-    min-width: 10dvh;
+    min-width: 50dvh;
+    margin-right: 10dvh;
 }
 
 .skills-graph{
-    width: 90dvh;
+    width: 80vh;
 }
 
 .skill{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 2dvb;
+    margin-bottom: 2dvh;
 }
 
-.HTML5{
-    margin-right: 3.5dvh;
-}
-.CSS3{
-    margin-right: 5.5dvh;
-}
-.JS{
-    margin-right: 0dvh;
-}
-.none{
-    width: 10dvh;
+.HTML5-progress-bar{
+    margin-left: 7dvh;
 }
 
 .uncomleted{
     height: 2dvh;
     width: 50dvh;
-    background-color: var(--secondary-color-1);
+    background-color:var(--secondary-color-1);
     border-radius: 1dvh;
-
-    transform: translateY(-1px);
-    position: absolute;
 }
 .comleted{
     height: 2dvh;
     background-color: var(--third-color-1);
     border-radius: 1dvh;
-
-    transform: translateY(-1px);
+    position: absolute;
 }
 
 .HTML5-progress-bar .comleted{

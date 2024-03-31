@@ -35,9 +35,10 @@ body, html{
 body{
     background-color: var(--main-color-1);
     color: var(--font-color-1);
-    overflow-x: hidden;
     max-width: 100%;
+    position: relative
 }
+
 
 .text{
     letter-spacing: 10px;
@@ -379,7 +380,7 @@ section.titles .blank{
         width: 250px;
     }
     .HTML5-progress-bar .completed{
-        width: 125px;
+        width: 200px;
     }
     
     .CSS3-progress-bar .completed{
@@ -387,7 +388,7 @@ section.titles .blank{
     }
     
     .JS-progress-bar .completed{
-        width: 200px;
+        width: 125px;
     }
 }
 
@@ -616,54 +617,48 @@ footer{
     .cirle1{
         top: -27px;
         right: 100px;
-        scale: 2;
+        scale: 4;
     }
     .cirle2{
         top: 275px;
         left: -27px;
         scale: 3;
     }
-    .cirle3{
+    .backgound-circles .cirle3{
         top: 650px;
-        left: 200px;
+        right: -27px;
         scale: 4;
-        opacity: 0;
     }
     .cirle4{
-        top: 2000px;
-        right: 0px;
+        top: 1700px;
+        left: 100px;
         scale: 3.5;
-        opacity: 0;
     }
     .cirle5{
-        top: 2000px;
+        top: 2300px;
         right: -27px;
         scale: 4.5;
-        opacity: 0;
     }
     .cirle6{
-        top: 2050px;
+        top: 2350px;
         left: -27px;
         scale: 2;
-        opacity: 0;
+
     }
     .cirle7{
-        top: 2300px;
-        right: 300px;
+        top: 3350px;
+        right: 50px;
         scale: 3;
-        opacity: 0;
     }
     .cirle8{
-        top: 2650px;
-        left: -100px;
+        top: 3500px;
+        left: -27px;
         scale: 4;
-        opacity: 0;
     }
     .cirle9{
-        top: 2800px;
+        top: 4050px;
         right: -27px;
         scale: 2;
-        opacity: 0;
     }
 }
 
@@ -671,14 +666,8 @@ footer{
 /*media query*/
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    body, html{
-        overflow-x: hidden;
-    }
+@media only screen and (max-width: 600px) {/*FINI*/
     
-    body{
-        max-width: 100%;
-    }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -701,6 +690,3 @@ footer{
     border: sold red;
 }
 
-#wanteeedContainer{
-    display: none;
-}

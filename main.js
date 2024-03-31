@@ -47,3 +47,20 @@ question2.addEventListener('click', () => {
     document.documentElement.style.setProperty('--border-1', 'hidden')
     document.documentElement.style.setProperty('--border-2', 'solid')
 })
+
+
+//animations skills graph visible
+
+window.addEventListener('scroll', function () {
+    var bigElement = document.querySelector('.element3')
+    var element1 = document.querySelector('.element1')
+    var element2 = document.querySelector('.element2')
+    var element3 = document.querySelector('.element3')
+    var position = bigElement.getBoundingClientRect()
+
+    if (position.top < window.innerHeight && position.bottom >= 0){
+        element1.classList.add('visible')
+        element2.classList.add('visible')
+        element3.classList.add('visible')
+    }
+})

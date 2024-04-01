@@ -166,17 +166,3 @@ body.addEventListener('mouseup', function () {
 }) 
 
 
-//animation up
-
-window.addEventListener('scroll', function () {
-    var element = document.querySelector('.navblock')
-    var position = element.getBoundingClientRect()
-
-    if (position.top < window.innerHeight && position.bottom >= 0){
-        element.animate({
-            transform : 'translateY(0)',
-            scale : '1'
-        }, { duration: 1000, fill: 'forwards'});
-    console.log('caca')
-    }
-})

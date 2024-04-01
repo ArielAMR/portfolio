@@ -1,4 +1,4 @@
-//
+//dark/light mode
 
 const switchThemeBtn = document.querySelector('.btn-toggle')
 let toggleTheme = true;
@@ -6,21 +6,25 @@ let toggleTheme = true;
 switchThemeBtn.addEventListener('click', () => {
 
     if(toggleTheme){
-        document.documentElement.style.setProperty('--main-color-1', '#FFFFFF')
-        document.documentElement.style.setProperty('--secondary-color-1', '#FAF7FF')
-        document.documentElement.style.setProperty('--third-color-1', '#8685EF')
-        document.documentElement.style.setProperty('--font-color-1', '#131313')
+        document.documentElement.style.setProperty('--main-color', '#FFFFFF')
+        document.documentElement.style.setProperty('--secondary-color', '#FAF7FF')
+        document.documentElement.style.setProperty('--third-color', '#8685EF')
+        document.documentElement.style.setProperty('--thrid-color-hover', '#5452d1')
+        document.documentElement.style.setProperty('--font-color', '#131313')
         document.documentElement.style.setProperty('--opacity-1', '0')
         document.documentElement.style.setProperty('--opacity-2', '1')
+        document.documentElement.style.setProperty('--cursor-color', '#131313')
 
         toggleTheme=!toggleTheme
     }else{
-        document.documentElement.style.setProperty('--main-color-1', '#131313')
-        document.documentElement.style.setProperty('--secondary-color-1', '#161616')
-        document.documentElement.style.setProperty('--third-color-1', '#7E3B9C')
-        document.documentElement.style.setProperty('--font-color-1', '#FAF7FF')
+        document.documentElement.style.setProperty('--main-color', '#131313')
+        document.documentElement.style.setProperty('--secondary-color', '#161616')
+        document.documentElement.style.setProperty('--third-color', '#7E3B9C')
+        document.documentElement.style.setProperty('--thrid-color-hover', '#521d6b')
+        document.documentElement.style.setProperty('--font-color', '#FAF7FF')
         document.documentElement.style.setProperty('--opacity-1', '1')
         document.documentElement.style.setProperty('--opacity-2', '0')
+        document.documentElement.style.setProperty('--cursor-color', '#FAF7FF')
 
         toggleTheme=!toggleTheme
     }
@@ -48,7 +52,6 @@ question2.addEventListener('click', () => {
     document.documentElement.style.setProperty('--border-2', 'solid')
 })
 
-
 //animations skills graph visible
 
 window.addEventListener('scroll', function () {
@@ -62,5 +65,118 @@ window.addEventListener('scroll', function () {
         element1.classList.add('visible')
         element2.classList.add('visible')
         element3.classList.add('visible')
+    }
+})
+
+//cursor
+
+const cursorDot = document.querySelector('.cursor-dot');
+const cursorOutline = document.querySelector('.cursor-outline');
+
+window.addEventListener('mousemove', function (e) {
+    
+    const posX = e.clientX;
+    const posY = e.clientY;
+
+    cursorDot.style.left = `${posX}px`;
+    cursorDot.style.top = `${posY}px`;
+
+    cursorOutline.style.left = `${posX}px`;
+    cursorOutline.style.top = `${posY}px`;
+
+    cursorOutline.animate({
+        left: `${posX}px`,
+        top: `${posY}px`
+    }, { duration: 500, fill: 'forwards'});
+
+})
+
+//cursor hover links
+let links = document.querySelectorAll('a');
+
+
+links.forEach(function(elem) {
+    elem.addEventListener('mouseenter', function () {
+        cursorOutline.animate({
+            width: '15px',
+            height: '15px'
+        }, { duration: 100, fill: 'forwards'});
+    }) 
+    elem.addEventListener('mouseleave', function () {
+        cursorOutline.animate({
+            width: '30px',
+            height: '30px'
+        }, { duration: 100, fill: 'forwards'});
+    }) 
+});
+
+//cursor invisibe when not on window
+
+const body = document.querySelector('body');
+
+body.addEventListener('mouseenter', function () {
+    cursorOutline.animate({
+        opacity: '0.7'
+    }, { duration: 500, fill: 'forwards'});
+    cursorDot.animate({
+        opacity: '1'
+    }, { duration: 1, fill: 'forwards'});
+}) 
+body.addEventListener('mouseleave', function () {
+    cursorOutline.animate({
+        opacity: '0'
+    }, { duration: 500, fill: 'forwards'});
+    cursorDot.animate({
+        opacity: '0'
+    }, { duration: 1, fill: 'forwards'});
+}) 
+
+//cursor change color when certification hover (only on dark mode)
+
+let certification = document.querySelectorAll('.img');
+
+
+certification.forEach(function(elem) {
+    elem.addEventListener('mouseenter', function () {
+        if(toggleTheme){
+            document.documentElement.style.setProperty('--cursor-color', '#131313')
+        }
+    }) 
+    elem.addEventListener('mouseleave', function () {
+        if(toggleTheme){
+            document.documentElement.style.setProperty('--cursor-color', '#FAF7FF')
+        }
+    }) 
+});
+
+//animations effect cursor
+
+
+body.addEventListener('mousedown', function () {
+    cursorOutline.animate({
+        width: '0px',
+        height: '0px'
+    }, { duration: 100, fill: 'both'});
+}) 
+body.addEventListener('mouseup', function () {
+    cursorOutline.animate({
+        width: '30px',
+        height: '30px'
+    }, { duration: 500, fill: 'both'});
+}) 
+
+
+//animation up
+
+window.addEventListener('scroll', function () {
+    var element = document.querySelector('.navblock')
+    var position = element.getBoundingClientRect()
+
+    if (position.top < window.innerHeight && position.bottom >= 0){
+        element.animate({
+            transform : 'translateY(0)',
+            scale : '1'
+        }, { duration: 1000, fill: 'forwards'});
+    console.log('caca')
     }
 })

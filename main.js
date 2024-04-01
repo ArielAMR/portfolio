@@ -130,6 +130,14 @@ body.addEventListener('mouseleave', function () {
         opacity: '0'
     }, { duration: 1, fill: 'forwards'});
 }) 
+body.addEventListener('mousemove', function () {
+    cursorOutline.animate({
+        opacity: '0.7'
+    }, { duration: 500, fill: 'forwards'});
+    cursorDot.animate({
+        opacity: '1'
+    }, { duration: 1, fill: 'forwards'});
+}) 
 
 //cursor change color when certification hover (only on dark mode)
 

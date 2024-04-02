@@ -777,7 +777,32 @@ footer{
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
+    body{
+         cursor: none;
+    }
+        
+    .cursor-dot{
+        width: 5px;
+        height: 5px;
+        background-color: var(--cursor-color);
+        opacity: 0;
+    }
+        
+    .cursor-outline{
+        width: 30px;
+        height: 30px;
+        border: 2px solid var(--cursor-color);
+        opacity: 0;
+    }
+    .cursor-dot, .cursor-outline{
+        position: fixed;
+        left: 0;
+        top: 0;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        z-index: 2;
+        pointer-events: none;
+    }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -812,30 +837,30 @@ footer{
 @media only screen and (min-width: 1200px) {
     body{
         cursor: none;
-    }
-    
-    .cursor-dot{
-        width: 5px;
-        height: 5px;
-        background-color: var(--cursor-color);
-        opacity: 0;
-    }
-    
-    .cursor-outline{
-        width: 30px;
-        height: 30px;
-        border: 2px solid var(--cursor-color);
-        opacity: 0;
-    }
-    .cursor-dot, .cursor-outline{
-        position: fixed;
-        left: 0;
-        top: 0;
-        transform: translate(-50%, -50%);
-        border-radius: 50%;
-        z-index: 2;
-        pointer-events: none;
-    }
+   }
+       
+   .cursor-dot{
+       width: 5px;
+       height: 5px;
+       background-color: var(--cursor-color);
+       opacity: 0;
+   }
+       
+   .cursor-outline{
+       width: 30px;
+       height: 30px;
+       border: 2px solid var(--cursor-color);
+       opacity: 0;
+   }
+   .cursor-dot, .cursor-outline{
+       position: fixed;
+       left: 0;
+       top: 0;
+       transform: translate(-50%, -50%);
+       border-radius: 50%;
+       z-index: 2;
+       pointer-events: none;
+   }
 }
 
 *{

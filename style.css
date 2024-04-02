@@ -12,13 +12,13 @@
     --font-color: #FAF7FF;
     --opacity-1: 1;
     --opacity-2: 0;
-    --border-1: solid;
-    --border-2: hidden;
+    --border-1: solid hsla(0, 0, 0, 0);
+    --border-2: solid #FAF7FF;
     --cursor-outline-diameter: 30px;
     --cursor-color: #FAF7FF;
     --cursor-opacity-1: 0;
     --cursor-opacity-2: 0;
-
+    
     /*  dark mode
     --main-color: #131313;
     --secondary-color: #161616;
@@ -504,7 +504,7 @@ section.titles .blank{
 
 .img-group2 .img{
     height: 200px;
-    width: 300px;
+    width: 250px;
     background-color: darkgray;
     border-radius: 25px;
     transition: all 500ms;
@@ -562,26 +562,18 @@ section.titles .blank{
 .questions-list .section-title{
     letter-spacing: 0;
     padding: 7px;
+    text-decoration: underline;
 }
 
 .question1{
-    border: var(--border-1);
-    border-color: var(--font-color);
+    border: var(--border-2);
     border-radius: 10px;
     transition: border 120ms;
 }
 .question2{
-    border: var(--border-2);
-    border-color: var(--font-color);
+    border: var(--border-1);
     border-radius: 10px;
     transition: border 120ms;
-}
-
-.question1:hover{
-    border: solid;
-}
-.question2:hover{
-    border: solid;
 }
 
 .awnser{

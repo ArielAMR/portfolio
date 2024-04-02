@@ -68,7 +68,22 @@ window.addEventListener('scroll', function () {
     }
 })
 
-//cursor
+
+//souris/pas souris
+
+let mouseUsed
+
+if (function detectMouse() {
+    document.body.classList.add('mouse-used');
+    return true;
+}){
+    mouseUsed = true;
+    console.log('mouse used')
+}else{
+    mouseUsed = true;
+};
+
+if(mouseUsed){
 
 const cursorDot = document.querySelector('.cursor-dot');
 const cursorOutline = document.querySelector('.cursor-outline');
@@ -188,4 +203,20 @@ body.addEventListener('mouseup', function () {
     }, { duration: 500, fill: 'both'});
 }) 
 
-
+}else{
+    const cursorDot = document.querySelector('cursorDot');
+    const cursorOutline = document.getElementById('cursorOutline');
+    const container = document.getElementById('container');
+    container.removeChild(cursorDot);
+    container.removeChild(cursorOutline);
+    cursorOutline.animate({
+        width: '0px',
+        height: '0px',
+        opacity: '0'
+    }, { duration: 1, fill: 'auto'});
+    cursorDot.animate({
+        width: '0px',
+        height: '0px',
+        opacity: '0'
+    }, { duration: 1, fill: 'auto'});
+}

@@ -499,18 +499,20 @@ section.titles .blank{
 
 .img-group2{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 30px;
+    
 }
 
-.img-group2 .img{
+.img-group2 img{
     height: 200px;
-    width: 250px;
     background-color: darkgray;
     border-radius: 25px;
     transition: all 500ms;
+    border: solid white 1.5px;
 }
 
-.img-group2 .img:hover{
+.img-group2 img:hover{
     scale: 1.1;
     opacity: 0.85;
 }

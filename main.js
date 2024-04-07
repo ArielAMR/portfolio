@@ -171,7 +171,7 @@ body.addEventListener('mousemove', function () {
 
 //cursor change color when certification hover (only on dark mode)
 
-let certification = document.querySelectorAll('.img');
+const certification = document.querySelectorAll('.cursor-color-change1');
 
 
 certification.forEach(function(elem) {
@@ -183,6 +183,21 @@ certification.forEach(function(elem) {
     elem.addEventListener('mouseleave', function () {
         if(toggleTheme){
             document.documentElement.style.setProperty('--cursor-color', '#FAF7FF')
+        }
+    }) 
+});
+
+const projectImages = document.querySelectorAll('.cursor-color-change2');
+
+projectImages.forEach(function(elem) {
+    elem.addEventListener('mouseenter', function () {
+        if(!toggleTheme){
+            document.documentElement.style.setProperty('--cursor-color', '#FAF7FF')
+        }
+    }) 
+    elem.addEventListener('mouseleave', function () {
+        if(!toggleTheme){
+            document.documentElement.style.setProperty('--cursor-color', '#131313')
         }
     }) 
 });

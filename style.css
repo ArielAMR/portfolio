@@ -556,6 +556,7 @@ section.titles .blank{
     margin: 200px;
     margin-top: 50px;
     margin-bottom: 0px;
+    display: none;
 }
 
 .questions .section-title{
@@ -707,16 +708,19 @@ footer{
     top: 2300px;
     right: 300px;
     scale: 3;
+    display: none;
 }
 .cirle8{
     top: 2650px;
     left: -100px;
     scale: 4;
+    display: none;
 }
 .cirle9{
     top: 2800px;
     right: -55px;
     scale: 2;
+    display: none;
 }
 
 @media only screen and (max-width: 600px) {

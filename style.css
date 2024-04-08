@@ -504,17 +504,23 @@ section.titles .blank{
     
 }
 
+.img-group2 a{
+    height: fit-content;
+}
+
 .img-group2 img{
     height: 200px;
-    background-color: darkgray;
+    width: auto;
+    margin: 20px;
+
+
     border-radius: 25px;
+    border: solid 2px white;
     transition: all 500ms;
-    border: solid white 1.5px;
 }
 
 .img-group2 img:hover{
     scale: 1.1;
-    opacity: 0.85;
 }
 
 
@@ -790,10 +796,7 @@ footer{
 
 }
 
-*{
-    border: sold red;
-}
-*
+
 
 /*no scroll bar*/
 

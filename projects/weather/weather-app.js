@@ -34,7 +34,7 @@ async function checkWeather(city){
         }else if(data.weather[0].main == 'Clear'){
             weatherIcon.src = 'weather-icons/clear.png';
         }else if(data.weather[0].main == 'Rain'){
-            weatherIcon.src = 'weather-icons/Rain.png';
+            weatherIcon.src = 'weather-icons/rain.png';
         }else if(data.weather[0].main == 'Drizzle'){
             weatherIcon.src = 'weather-icons/drizzle.png';
         }else if(data.weather[0].main == 'Mist'){

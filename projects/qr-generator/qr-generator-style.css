@@ -23,6 +23,7 @@ p{
     font-size: 15px;
     font-weight: 500;
     margin-bottom: 8px;
+    margin-top: 20px;
 }
 input, button{
     background-color: hsl(0, 0%, 20%);
@@ -41,6 +42,11 @@ input, button{
 }
 button{
     background-color: hsl(281,45%,42%);
+    cursor: pointer;
+    transition: all 500ms;
+}
+button:hover{
+    background-color: hsl(281,45%,32%);
 }
 .imgBox{
     width: 95%;

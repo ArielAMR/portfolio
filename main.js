@@ -36,20 +36,25 @@ switchThemeBtn.addEventListener('click', () => {
 const question1 = document.querySelector('.question1')
 const question2 = document.querySelector('.question2')
 
-
+document.documentElement.style.setProperty('--border-2', 'solid hsla(0, 0, 0, 0)')
+document.documentElement.style.setProperty('--border-1', 'solid hsla(0, 0, 0, 0)')
 
 question1.addEventListener('click', () => {
-    document.getElementById('awnser').innerHTML='Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsum porro quae fugit voluptatum hic, modi temporibus, et quo ipsa cumque eos autem ducimus nisi praesentium rerum tempore quia consequuntur laboriosam. Quia veritatis asperiores numquam ipsam sint iusto deleniti et atque hic temporibus, quisquam vero sequi omnis laborum consequuntur sit ullam expedita optio ratione animi esse cumque ipsa voluptatum! Ratione labore temporibus accusamus molestiae placeat praesentium. At magnam aliquid est aspernatur quam aliquam ducimus suscipit voluptas veritatis eaque. Qui dolore tempore eligendi, sunt eum expedita aut facere error quod explicabo repellendus odit nam accusamus debitis fugiat tenetur et aliquam amet!'
-    document.getElementById('question').innerHTML='Question 1'
-    document.documentElement.style.setProperty('--border-2', 'solid #FAF7FF')
+    document.getElementById('awnser').innerHTML='Since high school, I have been passionate about self-learning, using resources like YouTube videos and online courses, and applying what I\'ve learned through personal projects. This independent learning approach is why I chose Epitech. Epitech not only encourages self-directed learning but also provides the freedom to work on personal projects, while rewarding initiative and creativity. The school\'s emphasis on autonomy and practical, hands-on experience aligns perfectly with my own learning style, and offers the ideal environment to continue growing as a developer.'
+    if (toggleTheme)
+        document.documentElement.style.setProperty('--border-2', 'solid #FAF7FF')
+    else 
+        document.documentElement.style.setProperty('--border-2', 'solid #131313')
     document.documentElement.style.setProperty('--border-1', 'solid hsla(0, 0, 0, 0)')
 })
 
 question2.addEventListener('click', () => {
-    document.getElementById('awnser').innerHTML='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit saepe, maiores ipsum quos officia quod. Dolore molestias, eius quis expedita illum ea? Non numquam necessitatibus quia porro suscipit voluptatum, vitae expedita, sequi dolore harum deserunt! Nemo adipisci numquam natus laboriosam dicta, est saepe earum placeat in magnam blanditiis libero eum fuga alias minima, voluptatem consequatur non ipsa nobis quis ex, veniam voluptate illo. Quia repellendus eaque accusamus doloremque, reprehenderit, omnis incidunt quae dolor dicta, sequi laudantium sit nemo atque minus!'
-    document.getElementById('question').innerHTML='Question 2'
+    document.getElementById('awnser').innerHTML='I love programming because it offers an accessible and powerful way to solve real-world problems. With just a computer and the knowledge that anyone can acquire, programming allows me to create solutions that can have a tangible impact. The ability to turn ideas into reality, using logic and creativity, is what makes programming fulfilling and exciting to me.'
     document.documentElement.style.setProperty('--border-2', 'solid hsla(0, 0, 0, 0)')
-    document.documentElement.style.setProperty('--border-1', 'solid #FAF7FF')
+    if (toggleTheme)
+        document.documentElement.style.setProperty('--border-1', 'solid #FAF7FF')
+    else 
+        document.documentElement.style.setProperty('--border-1', 'solid #131313')
 })
 
 //animations skills graph visible
@@ -59,29 +64,23 @@ window.addEventListener('scroll', function () {
     var element1 = document.querySelector('.element1')
     var element2 = document.querySelector('.element2')
     var element3 = document.querySelector('.element3')
+    var element4 = document.querySelector('.element4')
+    var element5 = document.querySelector('.element5')
     var position = bigElement.getBoundingClientRect()
 
     if (position.top < window.innerHeight && position.bottom >= 0){
         element1.classList.add('visible')
         element2.classList.add('visible')
         element3.classList.add('visible')
+        element4.classList.add('visible')
+        element5.classList.add('visible')
     }
 })
 
 
 //souris/pas souris
 
-let mouseUsed
-
-if (function detectMouse() {
-    document.body.classList.add('mouse-used');
-    return true;
-}){
-    mouseUsed = true;
-    console.log('mouse used')
-}else{
-    mouseUsed = true;
-};
+let mouseUsed = true
 
 if(mouseUsed){
 

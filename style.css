@@ -37,21 +37,21 @@ html{
     scroll-behavior: smooth;
 }
 
-
-.text{
-    letter-spacing: 10px;
-}
-
 a{
     text-decoration: none;
     cursor: none;
     z-index: 1;
 }
 
+.text{
+    letter-spacing: 7px;
+}
+
 .section-title{
     font-weight: 550;
     text-align: center;
-    letter-spacing: 10px;
+    font-size: large;
+    letter-spacing: 5px;
     transform: translateX(5px);
 }
 
@@ -67,15 +67,16 @@ a{
 p, h2, h3, h5, h6, a{
     user-select: text;
 }
+
 .link{
     color: var(--font-color);
 }
 
 .subsection-title{
-    font-size: 14px;
+    font-size: large;
     margin-bottom: 70px;
     font-weight: 500;
-    letter-spacing: 7px;
+    letter-spacing: 5px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -160,7 +161,7 @@ p, h2, h3, h5, h6, a{
 }
 
 .subtitle{
-    letter-spacing: 20px;
+    letter-spacing: 7px;
     margin: 20px;
     font-size: large;
     transform: translateX(10px);
@@ -168,27 +169,7 @@ p, h2, h3, h5, h6, a{
 
 .headerContent{
     margin-top: 235px;
-    margin-bottom: 310px;
-}
-
-@media only screen and (max-width: 600px) {
-    .title, .subtitle{
-        letter-spacing: 13px;
-        transform: translateX(6.5px);
-        font-size: medium;
-        margin: 20px;
-    }
-    
-    .subtitle{
-        letter-spacing: 7px;
-        transform: translateX(3.5px);
-        font-size: x-small;
-    }
-    
-    .headerContent{
-        margin-top: 125px;
-        margin-bottom: 173px;
-    }
+    margin-bottom: 200px;
 }
 
 /*nav*/
@@ -204,7 +185,6 @@ p, h2, h3, h5, h6, a{
     padding-top: 13px;
 
     background-color: var(--third-color);
-
 
     border-radius: 100px;
 
@@ -234,49 +214,6 @@ p, h2, h3, h5, h6, a{
     transform: translateY(3px);
 }
 
-
-@media only screen and (max-width: 600px) {
-    .l1, .l2, .l3, .l4{
-        padding: 7px;
-        padding-top: 9px;
-        width: 150px;
-    }
-    .navblock{
-        grid-column-gap: 15px;
-        grid-row-gap: 15px;
-    }
-    .l1, .l3{   
-        text-indent: -9999px;
-        line-height: 0;
-    }
-    .l1::after, .l3::after{
-        text-indent: 0;
-        line-height: initial;
-        font-weight: 500;
-        letter-spacing: 5px;
-        transform: translateX(1.5px);
-        color: var(--font-color);
-        font-family: kufam, Helvetica, sans-serif;
-        text-transform: lowercase;
-    }
-
-    .l1::after{
-        content: "Certifs";
-    }
-    .l3::after{
-        content: "Projects";
-    }
-
-    .navbtn:hover{
-        background-color: var(--third-color);
-        scale: 1;
-    }
-
-    .navbtn{
-        transition: all 1ms;
-    }
-}
-
 /*Certifications*/
 
 .certifications{
@@ -288,7 +225,7 @@ p, h2, h3, h5, h6, a{
     background-color: var(--secondary-color);
 }
 
-.certifications .titles{
+.titles{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -302,8 +239,8 @@ section.titles .blank{
 
 .see-more-projects{
     font-weight: 300;
-    letter-spacing: 1px;
-    font-size: 10px;
+    letter-spacing: 0.7px;
+    font-size: 13px;
     text-decoration-line: underline;
     padding: 10px;
 }
@@ -314,7 +251,7 @@ section.titles .blank{
 }
 
 .img-group1 .img{
-    max-height: 225px;
+    max-height: 300px;
     min-height: 100px;
     min-width: 130px;
     margin: 20px;
@@ -394,27 +331,42 @@ section.titles .blank{
     width: 0;
 }
 
-.HTML5-progress-bar .completed{
+.HTML-progress-bar .completed{
     transition: all 3000ms ease-out;
 }
-.JS-progress-bar .completed{
-    transition: all 1400ms ease-out;
-}
-.CSS3-progress-bar .completed{
-    transition: all 2200ms ease-out;
-}
-
-.HTML5-progress-bar .completed.visible{
+.HTML-progress-bar .completed.visible{
     width: 300px;
 }
-.JS-progress-bar .completed.visible{
-    width: 140px;
+
+.JS-progress-bar .completed{
+    transition: all 2000ms ease-out;
 }
-.CSS3-progress-bar .completed.visible{
-    width: 220px;
+.JS-progress-bar .completed.visible{
+    width: 200px;
 }
 
-@media only screen and (max-width: 600px) {
+.SQL-progress-bar .completed{
+    transition: all 1000ms ease-out;
+}
+.SQL-progress-bar .completed.visible{
+    width: 100px;
+}
+
+.Python-progress-bar .completed{
+    transition: all 2000ms ease-out;
+}
+.Python-progress-bar .completed.visible{
+    width: 200px;
+}
+
+.C-progress-bar .completed{
+    transition: all 3000ms ease-out;
+}
+.C-progress-bar .completed.visible{
+    width: 300px;
+}
+
+/*@media only screen and (max-width: 600px) {
     .presentation-skills-graph{
         flex-direction: column;
         justify-content: space-between;
@@ -448,7 +400,7 @@ section.titles .blank{
     .completed{
         width: 0;
     }
-    .HTML5-progress-bar .completed{
+    .HTML-progress-bar .completed{
         transition: all 3000ms ease-out;
     }
     .JS-progress-bar .completed{
@@ -458,7 +410,7 @@ section.titles .blank{
         transition: all 2200ms ease-out;
     }
     
-    .HTML5-progress-bar .completed.visible{
+    .HTML-progress-bar .completed.visible{
         width: 150px;
     }
     .JS-progress-bar .completed.visible{
@@ -467,7 +419,7 @@ section.titles .blank{
     .CSS3-progress-bar .completed.visible{
         width: 110px;
     }
-}
+}*/
 
 /*My projects*/
 
@@ -542,8 +494,7 @@ section.titles .blank{
 .questions{
     margin: 200px;
     margin-top: 50px;
-    margin-bottom: 0px;
-    display: none;
+    margin-bottom: 50px;
 }
 
 .questions .section-title{

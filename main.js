@@ -60,7 +60,7 @@ question2.addEventListener('click', () => {
 //animations skills graph visible
 
 window.addEventListener('scroll', function () {
-    var bigElement = document.querySelector('.element3')
+    var bigElement = document.querySelector('.element5')
     var element1 = document.querySelector('.element1')
     var element2 = document.querySelector('.element2')
     var element3 = document.querySelector('.element3')

@@ -3,9 +3,9 @@ My Portfolio
 Welcome to my portfolio website! This site showcases my work, skills, and projects. Feel free to browse through and get in touch if you'd like to collaborate or learn more about what I do.\
 \
 Technologies Used :\
-> Frontend: raw code\
-> api's: qrserver and openweathermap\
-> Design Tools: Figma\
+Frontend: raw code\
+api's: qrserver and openweathermap\
+Design Tools: Figma\
 \
 \
 How to Use\

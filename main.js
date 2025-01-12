@@ -60,21 +60,27 @@ question2.addEventListener('click', () => {
 //animations skills graph visible
 
 window.addEventListener('scroll', function () {
-    var bigElement = document.querySelector('.element5')
     var element1 = document.querySelector('.element1')
     var element2 = document.querySelector('.element2')
     var element3 = document.querySelector('.element3')
     var element4 = document.querySelector('.element4')
     var element5 = document.querySelector('.element5')
-    var position = bigElement.getBoundingClientRect()
+    var position1 = element1.getBoundingClientRect()
+    var position2 = element2.getBoundingClientRect()
+    var position3 = element3.getBoundingClientRect()
+    var position4 = element4.getBoundingClientRect()
+    var position5 = element5.getBoundingClientRect()
 
-    if (position.top < window.innerHeight && position.bottom >= 0){
+    if ((position1.top < window.innerHeight && position1.bottom >= 0))
         element1.classList.add('visible')
+    if ((position2.top < window.innerHeight && position2.bottom >= 0))
         element2.classList.add('visible')
+    if ((position3.top < window.innerHeight && position3.bottom >= 0))
         element3.classList.add('visible')
+    if ((position4.top < window.innerHeight && position4.bottom >= 0))
         element4.classList.add('visible')
+    if ((position5.top < window.innerHeight && position5.bottom >= 0))
         element5.classList.add('visible')
-    }
 })
 
 

@@ -426,6 +426,10 @@ section.titles .blank{
 }
 
 .awnser{
+    margin-right: 1.25rem;
+    margin-right: clamp(1.25rem, -1rem + 11.25vw, 12.5rem);
+    margin-left: 1.25rem;
+    margin-left: clamp(1.25rem, -1rem + 11.25vw, 12.5rem);
     text-align: justify;
 }
 

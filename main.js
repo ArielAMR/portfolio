@@ -36,16 +36,13 @@ switchThemeBtn.addEventListener('click', () => {
 const question1 = document.querySelector('.question1')
 const question2 = document.querySelector('.question2')
 
-document.documentElement.style.setProperty('--border-2', 'solid hsla(0, 0, 0, 0)')
-document.documentElement.style.setProperty('--border-1', 'solid hsla(0, 0, 0, 0)')
-
 question1.addEventListener('click', () => {
     document.getElementById('awnser').innerHTML='Since high school, I have been passionate about self-learning, using resources like YouTube videos and online courses, and applying what I\'ve learned through personal projects. This independent learning approach is why I chose Epitech. Epitech not only encourages self-directed learning but also provides the freedom to work on personal projects, while rewarding initiative and creativity. The school\'s emphasis on autonomy and practical, hands-on experience aligns perfectly with my own learning style, and offers the ideal environment to continue growing as a developer.'
+    document.documentElement.style.setProperty('--border-1', 'solid hsla(0, 0, 0, 0)')
     if (toggleTheme)
         document.documentElement.style.setProperty('--border-2', 'solid #FAF7FF')
     else 
         document.documentElement.style.setProperty('--border-2', 'solid #131313')
-    document.documentElement.style.setProperty('--border-1', 'solid hsla(0, 0, 0, 0)')
 })
 
 question2.addEventListener('click', () => {

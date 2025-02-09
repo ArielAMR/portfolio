@@ -416,11 +416,13 @@ section.titles .blank{
 
 .questions-list .question1{
     border: var(--border-2);
+    border-width: 2px;
     border-radius: 10px;
     transition: border 120ms;
 }
 .questions-list .question2{
     border: var(--border-1);
+    border-width: 2px;
     border-radius: 10px;
     transition: border 120ms;
 }
@@ -567,76 +569,6 @@ font-size: clamp(0.6875rem, 0.6125rem + 0.375vw, 1.0625rem);
     @media only screen and (min-width: 768px) {
         right: -2%;
         scale: 4;
-    }
-}
-.cirle4{
-    top: 300vh;
-    left: 17vw;
-    scale: 3.5;
-
-    @media only screen and (max-width: 1000px) {
-        display: none;
-    }
-    @media only screen and (min-width: 1000px) {
-        top: 170vh;
-        left: 17vw;
-        scale: 3.5;
-    }
-}
-.cirle5{
-    top: 220vh;
-    right: -2%;
-    scale: 6;
-
-    @media only screen and (max-width: 1000px) {
-        display: none;
-    }
-    @media only screen and (min-width: 1000px) {
-        top: 220vh;
-        right: -2%;
-        scale: 6;
-    }
-}
-.cirle6{
-    top: 225vh;
-    left: -2%;
-    scale: 2;
-
-    @media only screen and (max-width: 1000px) {
-        display: none;
-    }
-    @media only screen and (min-width: 1000px) {
-        top: 225vh;
-        left: -2%;
-        scale: 2;
-    }
-}
-.cirle7{
-    top: 280vh;
-    left: 80vw;
-    scale: 3;
-
-    @media only screen and (max-width: 1000px) {
-        display: none;
-    }
-    @media only screen and (min-width: 1000px) {
-        top: 280vh;
-        left: 80vw;
-        scale: 3;
-    }
-}
-.cirle8{
-    top: 310vh;
-    left: -2%;
-    scale: 2;
-
-    @media only screen and (max-width: 1000px) {
-        display: none;
-    }
-    @media only screen and (min-width: 1000px) {
-        top: 310vh;
-        left: -2%;
-        scale: 2;
     }
 }
 

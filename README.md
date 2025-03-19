@@ -22,5 +22,4 @@ By accessing this website, you agree to the following:\
 You may not copy, reproduce, or use any content for commercial purposes without prior written consent.\
 You may not alter, modify, or manipulate any work found on this site.\
 Proper attribution must be given if the work is used in non-commercial settings, subject to prior approval.\
-If you have any questions or would like to seek permission to use any part of the content, please contact me via [insert preferred contact method].\
-\
+If you have any questions or would like to seek permission to use any part of the content, please contact me via linkedin.\
